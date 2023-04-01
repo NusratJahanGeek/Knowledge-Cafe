@@ -2,9 +2,15 @@ import React from 'react';
 import './Blog.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Blog = ({blog, handleReadTime}) => {
     const { authorImg, authorName, blogImg, blogName, firstCategory, secondCategory, writtenDate, readingTime } = blog;
+
+    const handleBookmarked = () =>{
+        toast("Already Bookmarked!")
+    }
+
     return (
         <div className='individual-blog-container'>
             <img src={blogImg} alt="" />
@@ -17,7 +23,7 @@ const Blog = ({blog, handleReadTime}) => {
                     <p>{writtenDate}</p>
                 </div>
                 <div>
-                    <p>{readingTime}  min read <FontAwesomeIcon icon={faBookmark} /></p>
+                    <p>{readingTime}  min read&nbsp;&nbsp;&nbsp;&nbsp;    <button onClick={handleBookmarked}><FontAwesomeIcon icon={faBookmark} /></button></p>
                 </div>
             </div>
             <h2>{blogName}</h2>

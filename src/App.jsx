@@ -2,6 +2,8 @@ import './App.css'
 import Header from './components/Header/Header'
 import Blogs from './components/Blogs/Blogs'
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [blogReadingTime, setBlogReadingTime] = useState("");
@@ -25,6 +27,7 @@ function App() {
       handleReadTime={handleReadTime}
       blogReadingTime={blogReadingTime}
       ></Blogs>
+      <ToastContainer></ToastContainer>
     </div>
   )
 }
