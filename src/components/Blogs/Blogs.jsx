@@ -1,32 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import './Blogs.css'
+import Sidebar from '../Sidebar/Sidebar';
 
-const Blogs = () => {
+const Blogs = ({handleReadTime, blogReadingTime}) => {
     const [blogs, setBlogs] = useState([]);
 
-    useEffect(() =>{
+    useEffect(() => {
         fetch('blogs.json')
-        .then(res => res.json())
-        .then(data => setBlogs(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [])
     return (
         <div className='blogs-container'>
-            <div className="individual-blogs">
+            <div className='individual-blogs'>
                 {
                     blogs.map(blog => <Blog
-                    key={blog.id}
-                    blog={blog}
+                        key={blog.id}
+                        blog={blog}
+                        handleReadTime={handleReadTime}
                     ></Blog>)
                 }
             </div>
-            <div className="blog-sidebar">
-                <div className="reading-time">
-                    <h4>Spent Time On Read:</h4>
-                </div>
-                <div className='bookmarked-blogs'>
-                    <h4>Bookmarked Blogs: </h4>
-                </div>
+            <div>
+                <Sidebar
+                blogReadingTime={blogReadingTime}
+                ></Sidebar>
             </div>
         </div>
     );

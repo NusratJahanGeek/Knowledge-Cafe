@@ -3,8 +3,8 @@ import './Blog.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const Blog = (props) => {
-    const { authorImg, authorName, blogImg, blogName, firstCategory, secondCategory, writtenDate, readingTime } = props.blog;
+const Blog = ({blog, handleReadTime}) => {
+    const { authorImg, authorName, blogImg, blogName, firstCategory, secondCategory, writtenDate, readingTime } = blog;
     return (
         <div className='individual-blog-container'>
             <img src={blogImg} alt="" />
@@ -17,12 +17,12 @@ const Blog = (props) => {
                     <p>{writtenDate}</p>
                 </div>
                 <div>
-                    <p>{readingTime} <FontAwesomeIcon icon={faBookmark} /></p>
+                    <p>{readingTime}  min read <FontAwesomeIcon icon={faBookmark} /></p>
                 </div>
             </div>
             <h2>{blogName}</h2>
             <p><small>{firstCategory} {secondCategory}</small></p>
-            <button><a>Mark as read</a></button>
+            <button onClick={() =>handleReadTime(readingTime)}><a>Mark as read</a></button>
         </div>
     );
 };

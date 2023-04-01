@@ -1,0 +1,22 @@
+.reading-time {
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+}
+
+.reading-time h4 {
+    color: #6047EC;
+    text-align: center;
+}
+
+.bookmarked-blogs {
+    background: rgba(96, 71, 236, 0.1);
+    border-radius: 8px;
+    margin-top: 25px;
+    padding: 10px 25px;
+}
+
+.blog-sidebar{
+    position: sticky;
+    top: 0;
+}
