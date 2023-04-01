@@ -7,13 +7,6 @@ import { ToastContainer, toast } from 'react-toastify';
 const Blog = ({blog, handleReadTime, handleBookmarked}) => {
     const { authorImg, authorName, blogImg, blogName, firstCategory, secondCategory, writtenDate, readingTime } = blog;
 
-    
-   /*  const handleBookmarked = () =>{
-        toast("Already Bookmarked!")
-    }  */
-
-    
-
     return (
         <div className='individual-blog-container'>
             <img src={blogImg} alt="" />
