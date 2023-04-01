@@ -1,0 +1,20 @@
+.individual-blog-container{
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    width: 845px;
+}
+.blog-details{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 38px;
+}
+button{
+    margin-bottom: 25px;
+	padding: 0;
+	color: #6047EC;
+    background-color: #000;
+    text-decoration: underline;
+    margin-left: -20px;
+}
+

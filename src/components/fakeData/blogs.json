@@ -1,0 +1,42 @@
+[
+    {
+        "id": "blog-1",
+        "firstCategory": "#beginners",
+        "secondCategory": "#programming",
+        "blogName": "How to get your first job as a self-taught programmer",
+        "authorName": "Mr. Raju",
+        "writtenDate": "Mar 14 (4 Days ago)",
+        "blogImg": "../src/images/Blog 1.png",
+        "authorImg": "../src/images/Author 1.png"
+    },
+    {
+        "id": "blog-2",
+        "firstCategory": "#beginners",
+        "secondCategory": "#programming",
+        "blogName": "How to get your first job as a self-taught programmer",
+        "authorName": "Mrs. Setara",
+        "writtenDate": "Mar 14 (4 Days ago)",
+        "blogImg": "../src/images/Blog 2.png",
+        "authorImg": "../src/images/Author 2.png"
+    },
+    {
+        "id": "blog-3",
+        "firstCategory": "#beginners",
+        "secondCategory": "#programming",
+        "blogName": "How to get your first job as a self-taught programmer",
+        "authorName": "Mina Mostofa",
+        "writtenDate": "Mar 14 (4 Days ago)",
+        "blogImg": "../src/images/Blog 3.png",
+        "authorImg": "../src/images/Author 3.png"
+    },
+    {
+        "id": "blog-4",
+        "firstCategory": "#beginners",
+        "secondCategory": "#programming",
+        "blogName": "How to get your first job as a self-taught programmer",
+        "authorName": "Nargis Sultana",
+        "writtenDate": "Mar 14 (4 Days ago)",
+        "blogImg": "../src/images/Blog 1.png",
+        "authorImg": "../src/images/Author 2.png"
+    }
+]
