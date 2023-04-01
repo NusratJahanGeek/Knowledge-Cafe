@@ -17,12 +17,12 @@ const Blogs = ({ handleReadTime, blogReadingTime }) => {
 
     const handleBookmarked = (blogName) => {
         const newBookmark = [...bookmark, blogName];
-        if (newBookmark.find(b => b[0] === {blogName})) {
+        if (bookmark.find((item, index) => bookmark.indexOf(item) === index)) {
             toast.error("Already have Bookmarked", { theme: "colored" });
         } else {
             toast.success("Added as Bookmark", { theme: "colored" });
-            setBookmark(newBookmark);
         }
+        setBookmark(newBookmark);
     }
 
     return (

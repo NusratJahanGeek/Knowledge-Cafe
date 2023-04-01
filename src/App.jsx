@@ -4,6 +4,7 @@ import Blogs from './components/Blogs/Blogs'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [blogReadingTime, setBlogReadingTime] = useState("");
@@ -30,6 +31,7 @@ function App() {
       blogReadingTime={blogReadingTime}
       ></Blogs>
       <ToastContainer></ToastContainer>
+      <Footer></Footer>
     </div>
   )
 }
