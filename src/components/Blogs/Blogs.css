@@ -1,6 +1,7 @@
 .blogs-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 2fr;
+    gap: 50px;
     width: 1280px;
     margin-left: 50px;
 }

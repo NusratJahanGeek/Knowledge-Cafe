@@ -20,3 +20,10 @@
     position: sticky;
     top: 0;
 }
+
+.bookmarked-individual-blogs{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

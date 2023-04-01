@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [blogReadingTime, setBlogReadingTime] = useState("");
-  
   const handleReadTime = (time) => {
     const previousReadTime = parseInt(localStorage.getItem("readTime"));
     if (previousReadTime) {
@@ -20,6 +19,9 @@ function App() {
       setBlogReadingTime(parseInt(time));
     }
   }
+
+  
+
   return (
     <div className="App">
       <Header></Header>
